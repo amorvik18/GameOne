@@ -19,7 +19,7 @@ namespace GameOne
     Console.Write("Please type \"YES\" or \"NO\": ");
     
     string noiseChoice = Console.ReadLine();
-    
+
     noiseChoice = noiseChoice.ToUpper();
       
       if (noiseChoice == "NO")
@@ -37,6 +37,16 @@ namespace GameOne
       string doorChoice = Console.ReadLine();
 
       doorChoice = doorChoice.ToUpper();
+
+      if (doorChoice == "KNOCK")
+      {
+      Console.WriteLine("A voice behind the door speaks. It says, \"Answer this riddle:\" \n \"Poor people have it. Rich people need it. \n If you eat it you die. What is it?\"");
+
+      Console.WriteLine("Type your answer: ");
+
+      string riddleAnswer = Console.ReadLine();
+      
+      riddleAnswer = riddleAnswer.ToUpper();
     }
   }
 }
