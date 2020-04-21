@@ -1,14 +1,12 @@
 using System;
 
-namespace Snake 
+namespace GameOne 
 {
-class MainClass {
-    public static void Main (string[] args) {
-    
-    Console.WriteLine("Hello Stranger! Please tell me your name.");
-    string userName = Console.ReadLine();
-    Console.WriteLine ($"Welcome in GameOne {userName}. Press enter to continue...");
-    Console.ReadLine();
+  class MainClass {
+    static void Main (string[] args) {
+    // Start by asking fo the user's name:
+    Console.Write("What is your name?: ");
+
     }
   }
 }
