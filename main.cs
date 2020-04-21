@@ -38,15 +38,28 @@ namespace GameOne
 
       doorChoice = doorChoice.ToUpper();
 
-      if (doorChoice == "KNOCK")
-      {
-      Console.WriteLine("A voice behind the door speaks. It says, \"Answer this riddle:\" \n \"Poor people have it. Rich people need it. \n If you eat it you die. What is it?\"");
+        if (doorChoice == "KNOCK")
+        {
+        Console.WriteLine("A voice behind the door speaks. It says, \"Answer this riddle:\" \n \"Poor people have it. Rich people need it. \n If you eat it you die. What is it?\"");
 
-      Console.WriteLine("Type your answer: ");
+        Console.WriteLine("Type your answer: ");
 
-      string riddleAnswer = Console.ReadLine();
-      
-      riddleAnswer = riddleAnswer.ToUpper();
+        string riddleAnswer = Console.ReadLine();
+
+        riddleAnswer = riddleAnswer.ToUpper();
+
+        if (riddleAnswer == "NOTHING")
+        {
+        Console.WriteLine("The door opens and NOTHING is there. \n You turn off the light and run back to your \n room and lock the door. \n THE END.\n Press any key to close the game");
+
+        Console.ReadLine();
+        }
+        else
+        {
+        Console.WriteLine("You answered incorrectly. The door doesn't open. \n THE END.\n Press any key to close the game.");
+        
+        Console.ReadLine();
+        }
     }
   }
 }
