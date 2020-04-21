@@ -64,11 +64,31 @@ namespace GameOne
         else if (doorChoice == "OPEN")
         {
           Console.WriteLine("The door is locked! See if \n one of your three keys will open it.");
-          
+
           Console.Write("Enter a number (1-3): ");
 
           string keyChoice = Console.ReadLine();
-        
+
+          switch (keyChoice)
+          {
+            case "1":
+              Console.WriteLine("You choose the first key. Lucky choice! \n The door opens and NOTHING is there. Strange... \n THE END. \n Press any key to close the game.");
+
+              Console.ReadLine();
+              break;
+            case "2":
+              Console.WriteLine("You choose the second key. The door doesn't open. \n THE END. \n Press any key to close the game.");
+
+              Console.ReadLine();
+              break;
+            case "3":
+              Console.WriteLine("You choose the third key. The door doesn't open.\n THE END. \n Press any key to close the game.");
+              
+              Console.ReadLine();
+              break;
+          }
+        }
+      }  
     }
   }
 }
