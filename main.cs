@@ -13,6 +13,8 @@ namespace GameOne
     Console.WriteLine($"Hello, {name}! Welcome to our story.");
     Console.WriteLine("It begins on a cold rainy night. You're sitting in your room and hear a noise coming from down the hall. Do you go investigate?");
     Console.Write("Please type \"YES\" or \"NO\": ");
+    string noiseChoice = Console.ReadLine();
+    noiseChoice = noiseChoice.ToUpper();
     }
   }
 }
